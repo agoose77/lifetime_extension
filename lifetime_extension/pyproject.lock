@@ -1,0 +1,134 @@
+[[package]]
+name = "bokeh"
+version = "0.12.15"
+description = "Interactive plots and applications in the browser from Python"
+category = "main"
+optional = false
+python-versions = "*"
+platform = "*"
+
+[[package]]
+name = "dispy"
+version = "4.8.5"
+description = "Distributed and Parallel Computing with/for Python."
+category = "main"
+optional = false
+python-versions = "*"
+platform = "*"
+
+[[package]]
+name = "jupyter"
+version = "1.0.0"
+description = "Jupyter metapackage. Install all the Jupyter components in one go."
+category = "main"
+optional = false
+python-versions = "*"
+platform = "*"
+
+[[package]]
+name = "numpy"
+version = "1.14.2"
+description = "NumPy: array processing for numbers, strings, records, and objects."
+category = "main"
+optional = false
+python-versions = "*"
+platform = "*"
+
+[[package]]
+name = "pandas"
+version = "0.22.0"
+description = "Powerful data structures for data analysis, time series,and statistics"
+category = "main"
+optional = false
+python-versions = "*"
+platform = "*"
+
+[package.dependencies]
+python-dateutil = "*"
+pytz = ">= 2011.0.0.0-k"
+numpy = ">= 1.9.0.0"
+[[package]]
+name = "pycos"
+version = "4.6.5"
+description = "Concurrent, Asynchronous, Distributed, Communicating Tasks with Python"
+category = "main"
+optional = false
+python-versions = "*"
+platform = "*"
+
+[[package]]
+name = "python-dateutil"
+version = "2.7.2"
+description = "Extensions to the standard Python datetime module"
+category = "main"
+optional = false
+python-versions = "*"
+platform = "*"
+
+[package.dependencies]
+six = ">= 1.5.0.0"
+[[package]]
+name = "pytz"
+version = "2018.4"
+description = "World timezone definitions, modern and historical"
+category = "main"
+optional = false
+python-versions = "*"
+platform = "*"
+
+[[package]]
+name = "scipy"
+version = "1.0.1"
+description = "SciPy: Scientific Library for Python"
+category = "main"
+optional = false
+python-versions = "*"
+platform = "*"
+
+[package.dependencies]
+numpy = ">= 1.8.2.0"
+[[package]]
+name = "selenium"
+version = "3.11.0"
+description = "Python bindings for Selenium"
+category = "main"
+optional = false
+python-versions = "*"
+platform = "*"
+
+[[package]]
+name = "six"
+version = "1.11.0"
+description = "Python 2 and 3 compatibility utilities"
+category = "main"
+optional = false
+python-versions = "*"
+platform = "*"
+
+[[package]]
+name = "xlrd"
+version = "1.1.0"
+description = "Library for developers to extract data from Microsoft Excel (tm) spreadsheet files"
+category = "main"
+optional = false
+python-versions = "*"
+platform = "*"
+
+[metadata]
+python-versions = "*"
+platform = "*"
+content-hash = "21981dbdefa8aaad08371179afe9aa34787e72efe319103168906c55c83b8edb"
+
+[metadata.hashes]
+bokeh = [ "2891b883b30107dc610a7e963a21222f1fd096844d157c09db115179cfab6513",]
+dispy = [ "0398f278018e29fa224e8f11add82594647d5d17b0e1921972e47c733c90a6ef",]
+jupyter = [ "5b290f93b98ffbc21c0c7e749f054b3267782166d72fa5e3ed1ed4eaf34a2b78", "d9dc4b3318f310e34c82951ea5d6683f67bed7def4b259fafbfe4f1beb1d8e5f", "3e1f86076bbb7c8c207829390305a2b1fe836d471ed54be66a3b8c41e7f46cc7",]
+numpy = [ "719d914f564f35cce4dc103808f8297c807c9f0297ac183ed81ae8b5650e698e", "0f6a5ed0cd7ab1da11f5c07a8ecada73fc55a70ef7bb6311a4109891341d7277", "d0928076d9bd8a98de44e79b1abe50c1456e7abbb40af7ef58092086f1a6c729", "d858423f5ed444d494b15c4cc90a206e1b8c31354c781ac7584da0d21c09c1c3", "20cac3123d791e4bf8482a580d98d6b5969ba348b9d5364df791ba3a666b660d", "528ce59ded2008f9e8543e0146acb3a98a9890da00adf8904b1e18c82099418b", "56e392b7c738bd70e6f46cf48c8194d3d1dd4c5a59fae4b30c58bb6ef86e5233", "99051e03b445117b26028623f1a487112ddf61a09a27e2d25e6bc07d37d94f25", "768e777cc1ffdbf97c507f65975c8686ebafe0f3dc8925d02ac117acc4669ce9", "675e0f23967ce71067d12b6944add505d5f0a251f819cfb44bdf8ee7072c090d", "a958bf9d4834c72dee4f91a0476e7837b8a2966dc6fcfc42c421405f98d0da51", "bb370120de6d26004358611441e07acda26840e41dfedc259d7f8cc613f96495", "f2b1378b63bdb581d5d7af2ec0373c8d40d651941d283a2afd7fc71184b3f570", "a1413d06abfa942ca0553bf3bccaff5fdb36d55b84f2248e36228db871147dab", "7f76d406c6b998d6410198dcb82688dcdaec7d846aa87e263ccf52efdcfeba30", "a7157c9ac6bddd2908c35ef099e4b643bc0e0ebb4d653deb54891d29258dd329", "0fd65cbbfdbf76bbf80c445d923b3accefea0fe2c2082049e0ce947c81fe1d3f", "8c18ee4dddd5c6a811930c0a7c7947bf16387da3b394725f6063f1366311187d", "0739146eaf4985962f07c62f7133aca89f3a600faac891ce6c7f3a1e2afe5272", "07e21f14490324cc1160db101e9b6c1233c33985af4cb1d301dd02650fea1d7f", "e6120d63b50e2248219f53302af7ec6fa2a42ed1f37e9cda2c76dbaca65036a7", "6be6b0ca705321c178c9858e5ad5611af664bbdfae1df1541f938a840a103888", "facc6f925c3099ac01a1f03758100772560a0b020fb9d70f210404be08006bcb",]
+pandas = [ "68ac484e857dcbbd07ea7c6f516cc67f7f143f5313d9bc661470e7f473528882", "12f2a19d0b0adf31170d98d0e8bcbc59add0965a9b0c65d39e0665400491c0c5", "68b121d13177f5128a4c118bb4f73ba40df28292c038389961aa55ea5a996427", "06efae5c00b9f4c6e6d3fe1eb52e590ff0ea8e5cb58032c724e04d31c540de53", "02541a4fdd31315f213a5c8e18708abad719ee03eda05f603c4fe973e9b9d770", "2907f3fe91ca2119ac3c38de6891bbbc83333bfe0d98309768fee28de563ee7a", "052a66f58783a59ea38fdfee25de083b107baa81fdbe38fabd169d0f9efce2bf", "244ae0b9e998cfa88452a49b20e29bf582cc7c0e69093876d505aec4f8e1c7fe", "66403162c8b45325a995493bdd78ad4d8be085e527d721dbfa773d56fbba9c88", "af0dbac881f6f87acd325415adea0ce8cccf28f5d4ad7a54b6a1e176e2f7bf70", "c2cd884794924687edbaad40d18ac984054d247bb877890932c4d41e3c3aba31", "c372db80a5bcb143c9cb254d50f902772c3b093a4f965275197ec2d2184b1e61", "97c8223d42d43d86ca359a57b4702ca0529c6553e83d736e93a5699951f0f8db", "587a9816cc663c958fcff7907c553b73fe196604f990bc98e1b71ebf07e45b44", "44a94091dd71f05922eec661638ec1a35f26d573c119aa2fad964f10a2880e6c",]
+pycos = [ "aa4bb60a0bebbbf432ec230339ae6dad1f9b7b0f42e4ec35ec2de93c7093803a",]
+python-dateutil = [ "3220490fb9741e2342e1cf29a503394fdac874bc39568288717ee67047ff29df", "9d8074be4c993fbe4947878ce593052f71dac82932a677d49194d8ce9778002e",]
+pytz = [ "65ae0c8101309c45772196b21b74c46b2e5d11b6275c45d251b150d5da334555", "c06425302f2cf668f1bba7a0a03f3c1d34d4ebeef2c72003da308b3947c7f749",]
+scipy = [ "3fab61f6ffbc1da9e1f8e813ba235929b5f361c1fdd728d120ead8f78560427c", "4a9f5a3adbfd08dd047de48a6b436bd4dae364913aa5b6349a41e9eaeb774050", "cc85b9d10a5da07a6b27449d17584b1a3d953f7286189f170a6045c6c297b0bc", "76f32095863f7eccecaf5224624d4c7f0f3b922b2cd0d0b0d6f037e4d9c54db6", "232a848a9935c37ffe2cade857296a13680724aef7d4623160dd08f99dbb9d02", "3eb28bdc6f40a964761c1cb339e45fef076ea2ca729886e1bce956932ef7e487", "103fd8253fd3f0df3f50a554abc01b13bee1d70483f23bb03636a74b0a0cbc71", "f26e54dcdeec3daff6ec71854a7b3bba719b78cf07e2d23645ee09d67a5e93df", "a3287b438b3c13970c4851a34bbc82db11e4680d1d6cdedd066479ca83028042", "200ca3dfebbd0bbacbc0d7389e6eda77428b49793cc1e0e3247f835687d1a6be", "f7c0624de958e2e2e6353813c78aa4f5f3f1ed0a3567fb496b6dad99f55e695e", "544e6f7796b9c131f8f965967e806da187553abf5d7766278b96a2a76abd19a7", "4a2837b07e77f8e2fc5303f38e224d7fd9f79f8cbf9c60ac72cf98594e1db6b5", "11cddcfc348ef593feb4ffe4b69c18a064eca199602f751d34083838bdc2f05a", "164f774de04e546fd10e1894d423b54e36255bb42887e005f0fbfb8eef6736f1", "800abaa55cfad422f00f5b3802403dd634ab9888f560731c09977a3c35e0acae", "be6f0af3f591c100923158f3e3f0f12fa16a0b231616eda407c528e1f9e10014", "1766acf2d8ff79ed59cae841d4272587af94772f513619dd217226027bd2ab76", "f2a51f70ef868c03430ed40d8983daa2f38d2e2160a0de4b57b7d9d070912c76", "89c1d2a80760a373e7f12f490446c60a7221b641435a789439e8ddb01f5ab7d4", "823a4b1a2eabd09f9e72003c14ceaac63f54d1f99a49f8c1b534f6a73135e995", "cc04cf28b9f77255eeb612af41a6f207142f92a082555871f782c773c83b7789", "8739c67842ed9a1c34c62d6cca6301d0ade40d50ef14ba292bd331f0d6c940ba",]
+selenium = [ "2b6f018e55f50e9c67a67caec2f73f806f72c162fb38cf3ea79e0a8f6506bf56", "5841fb30c3965866220c34d16de8e3d091e2833fcac385160a63db0c3522a297",]
+six = [ "832dc0e10feb1aa2c68dcc57dbb658f1c7e65b9b61af69048abc87a2db00a0eb", "70e8a77beed4562e7f14fe23a786b54f6296e34344c23bc42f07b15018ff98e9",]
+xlrd = [ "83a1d2f1091078fb3f65876753b5302c5cfb6a41de64b9587b74cefa75157148", "8a21885513e6d915fe33a8ee5fdfa675433b61405ba13e2a69e62ee36828d7e2",]

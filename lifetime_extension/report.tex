@@ -33,6 +33,7 @@
 
 \setlength\parindent{0pt} % Removes all indentation from paragraphs
 \DeclareSIUnit\neutron{n}
+\newcommand\RT{\operatorname{RT}}
 
   % \renewcommand{\labelenumi}{\alph{enumi}.} % Make numbering in the enumerate environment by letter rather than number (e.g. section 6)
 
@@ -53,10 +54,64 @@
   
 \end{abstract}
 
-\section{Introduction}
+\section{Part A}
 
-
-
+    \begin{table}
+    \caption{$\sigma_\Delta$ values for different materials.}
+    \label{table:sigma_delta}
+    \centering
+    \begin{tabular}{llr}
+    \toprule
+    {} &    Material &  $\sigma_\Delta$ \\
+    \midrule
+    0 &        Weld &  28 \\
+    1 &  Base Metal &  17 \\
+    \bottomrule
+    \end{tabular}
+    \end{table}
+    
+    The value for $\sigma_\Delta$ was taken from the key (see Table~\ref{table:sigma_delta}). The value for $M$ was calculated using Eq~\ref{eq:m}.    
+    The values for $\operatorname{CF}$ were linearly interpolated from the chemistry tables given, using the $\ce{Cu}$ and $\ce{Ni}$ parameters given in the Charpy data source.
+    
+    The \ce{Cu} content at the \SI{95}{\percent} probability given by the normal distribution $\mathcal{N}(\mu=\SI{0.213}{wt\percent C}, \sigma=\SI{0.02}{wt\percent C})$ was found to be \SI{0.24590}{wt\percent C}.
+    
+    \begin{equation}
+    \label{eq:m}
+        M = 2\sqrt{\sigma_U^2+\sigma_\Delta^2}
+    \end{equation}
+    
+    \begin{align}
+    \label{eq:rt_ndt}
+        \Delta{\RT}_{\operatorname{NDT}} &= R\times \operatorname{CF} \times f \\
+        \RT_{\operatorname{NDT}} &= \RT(U) + \Delta\RT_{\operatorname{NDT}} + M
+    \end{align}
+    
+    \begin{align}
+    \label{eq:rt_pts}
+        \Delta{\RT}_{\operatorname{PTS}} &= R\times \operatorname{CF} \times F^{0.28 - 0.10\ln{F}} \\
+        \RT_{\operatorname{PTS}} &= \RT(U) + \Delta\RT_{\operatorname{PTS}} + M
+    \end{align}
+    
+    \begin{table}
+    \label{table:rt_values}
+    \caption{Parameters and results from calculation of $\operatorname{RT}_{\operatorname{NDT}}$ and $\operatorname{RT}_{\operatorname{PTS}}$.}
+    \begin{tabular}{lllrrrrrrrr}
+        \toprule
+        {} &                                  Identity &              Material &  $\sigma_\Delta$ &      M &    f &     CF &  $\Delta\operatorname{RT}_{\operatorname{NDT}}$ &  $\operatorname{RT}_{\operatorname{NDT}}$  & $\Delta\operatorname{RT}_{\operatorname{PTS}}$  &  $\operatorname{RT}_{\operatorname{PTS}}$ \\
+        \midrule
+        0 &                                  D-3803-1 &                 PLATE &   17 & 34.000 & 1.196 & 158.95 &  190.076 & 219.076 &  184.072 & 213.072 \\
+        1 &                                  D-3803-2 &                 PLATE &   17 & 34.000 & 1.196 & 160.40 &  191.810 & 195.810 &  185.751 & 189.751 \\
+        2 &                                  D-3803-3 &                 PLATE &   17 & 34.000 & 1.196 & 157.50 &  188.342 & 217.342 &  182.393 & 211.393 \\
+        3 &                                  D-3804-1 &                 PLATE &   17 & 34.000 & 1.196 & 128.80 &  154.022 & 188.022 &  149.157 & 183.157 \\
+        4 &                                  D-3804-1 &                 PLATE &   17 & 34.000 & 1.196 & 131.00 &  156.653 & 160.653 &  151.705 & 155.705 \\
+        5 &                                  D-3804-1 &                 PLATE &   17 & 34.000 & 1.196 &  82.00 &   98.057 & 107.057 &   94.960 & 103.960 \\
+        6 &  [...] 2-112 A/C &            Axial Weld &   28 & 65.513 & 1.123 & 230.15 &  258.431 & 267.944 &  255.248 & 264.761 \\
+        7 &          [...] 3-112A/C &            Axial Weld &   28 & 65.513 & 1.123 & 217.10 &  243.777 & 253.291 &  240.775 & 250.288 \\
+        8 &          [...] 3-112A/C &            Axial Weld &   28 & 65.513 & 1.123 & 230.15 &  258.431 & 267.944 &  255.248 & 264.761 \\
+        9 &                [...] D 9-112 &  Circ. Weld &   28 & 65.513 & 1.205 & 225.20 &  271.458 & 280.972 &  262.019 & 271.532 \\
+        \bottomrule
+        \end{tabular}
+    \end{table}
 \section{Appendix}
     %\captionof{listing}{Exercise 1. MCNP input file.\label{lst:ex_1}}
     %\inputminted[linenos,breaklines]{lexer.py -x}{mcnp/1.ip}

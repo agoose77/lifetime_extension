@@ -15,5 +15,6 @@ xlrd = "^1.1"
 selenium = "^3.11"
 dispy = "^4.8"
 pycos = "^4.6"
+matplotlib = "^2.2"
 
 [tool.poetry.dev-dependencies]

@@ -1,0 +1,3 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n}{scipy}\PYG{o}{.}\PYG{n}{stats}\PYG{o}{.}\PYG{n}{norm}\PYG{o}{.}\PYG{n}{ppf}\PYG{p}{(}\PYG{o}{.}\PYG{l+m+mi}{95}\PYG{p}{,} \PYG{err}{μ}\PYG{p}{,} \PYG{err}{σ}\PYG{p}{)}
+\end{Verbatim}

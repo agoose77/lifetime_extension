@@ -67,13 +67,13 @@ In order to estimate the reference temperature safety margins for the given samp
     
     The various parameters referenced by these equations were found as follows:
     \begin{itemize}
-    \item $\sigma_\Delta$ was taken from the key (see Table~\ref{table:sigma_delta})
-    \item $M$ was calculated using Eq~\ref{eq:m}
-    \item $\operatorname{CF}$ was linearly interpolated from the chemistry tables given, using the $\ce{Cu}$ and $\ce{Ni}$ parameters given in the Charpy data source
+    \item $\sigma_\Delta$ was taken from the key (see Table~\ref{table:sigma_delta}).
+    \item $M$ was calculated using Eq~\ref{eq:m}.
+    \item $\operatorname{CF}$ was linearly interpolated from the chemistry tables given, using the $\ce{Cu}$ and $\ce{Ni}$ parameters given in the Charpy data source.
     \item $f$ was determined for $\Delta{\RT}_{\operatorname{NDT}}$ by mapping EOL fluence to the parameter $f$ from the digitised graph given in the specification appendix, as required.
     \end{itemize}
     
-    The results for these calculations can be seen in Table~\ref{table:rt_values}. All units given in the table are consistent with those given in the report specification.
+    The results for these calculations can be seen in Table~\ref{table:rt_values}. All units given in the table are consistent with those given in the report specification. It was hence determined from the PTS values that life limiting beltline materials were equally the 2-112A/C and the (second) 3-112A/C axial welds.
     
     \begin{equation}
     \label{eq:m}
@@ -84,12 +84,12 @@ In order to estimate the reference temperature safety margins for the given samp
     \caption{$\sigma_\Delta$ values for different materials.}
     \label{table:sigma_delta}
     \centering
-    \begin{tabular}{llr}
+    \begin{tabular}{lr}
     \toprule
-    {} &    Material &  $\sigma_\Delta$ \\
+    Material &  $\sigma_\Delta$ \\
     \midrule
-    0 &        Weld &  28 \\
-    1 &  Base Metal &  17 \\
+    Weld &  28 \\
+    Base Metal &  17 \\
     \bottomrule
     \end{tabular}
     \end{table}
@@ -108,7 +108,7 @@ In order to estimate the reference temperature safety margins for the given samp
         3 &   D-3804-1 &           Plate &   17 & 34.000 & 1.196 & 128.80 &  154.022 & 188.022 &  149.157 & 183.157 &   86.843 \\
         4 &   D-3804-1 &           Plate &   17 & 34.000 & 1.196 & 131.00 &  156.653 & 160.653 &  151.705 & 155.705 &  114.295 \\
         5 &   D-3804-1 &           Plate &   17 & 34.000 & 1.196 &  82.00 &   98.057 & 107.057 &   94.960 & 103.960 &  166.040 \\
-        6 &  2-112 A/C &      Axial Weld &   28 & 65.513 & 1.123 & 230.15 &  258.431 & 267.944 &  255.248 & 264.761 &    5.239 \\
+        6 &  2-112A/C &      Axial Weld &   28 & 65.513 & 1.123 & 230.15 &  258.431 & 267.944 &  255.248 & 264.761 &    5.239 \\
         7 &   3-112A/C &      Axial Weld &   28 & 65.513 & 1.123 & 217.10 &  243.777 & 253.291 &  240.775 & 250.288 &   19.712 \\
         8 &   3-112A/C &      Axial Weld &   28 & 65.513 & 1.123 & 230.15 &  258.431 & 267.944 &  255.248 & 264.761 &    5.239 \\
         9 &      9-112 &  Circumf...Weld &   28 & 65.513 & 1.205 & 225.20 &  271.458 & 280.972 &  262.019 & 271.532 &   28.468 \\
@@ -156,7 +156,7 @@ In order to estimate the reference temperature safety margins for the given samp
     \begin{equation}
         c\operatorname{atanh}{\frac{E-a}{b}}\,,
     \end{equation}
-    using these fit parameters.
+    using these fit parameters. The $T_{\SI{40}{\joule}}$ could not be determined for the \textit{RPV 515} sample, as the upper asymptote fell below the \SI{40}{\joule} threshold. In terms of safety, it should be assumed that for all temperatures, the Charpy impact energy will be below \SI{40}{\joule} for this sample.
     
     The value $\Delta T_{\SI{40}{\joule}}$ was then determined for each data set as the difference of $T^i_{\SI{40}{\joule}}$ and $T^0_{\SI{40}{\joule}}$, the individual and unirradiated start of life parameters respectively (see Table~\ref{table:estimated_t}).
     
